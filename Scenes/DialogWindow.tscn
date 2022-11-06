@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Frames/Victor.tres" type="SpriteFrames" id=1]
+
+[node name="DialogWindow" type="PanelContainer"]
+anchor_right = 1.0
+margin_bottom = 142.0
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 1017.0
+margin_bottom = 135.0
+size_flags_vertical = 3
+
+[node name="CenterContainer" type="CenterContainer" parent="HBoxContainer"]
+margin_right = 128.0
+margin_bottom = 128.0
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="HBoxContainer/CenterContainer"]
+position = Vector2( 64, 64 )
+scale = Vector2( 4, 4 )
+frames = ExtResource( 1 )
+frame = 1
+playing = true
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/CenterContainer"]
+margin_right = 128.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 128, 128 )
+size_flags_horizontal = 2
+size_flags_vertical = 2
+expand = true
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+margin_left = 132.0
+margin_right = 825.0
+margin_bottom = 14.0
+size_flags_vertical = 0
+text = "Buna ziua! Sunt Cotnari Vector, si am fost creat de Acatrinei Robert-Marian pentru a testa fereastra de dialog!"
