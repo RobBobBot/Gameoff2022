@@ -4,7 +4,7 @@ func toCutscene():
 	Stats.inCutscene=true
 	get_node("DialogWindow").visible=true
 	var tween:Tween=get_node("DialogWindow/Tween")
-	tween.interpolate_property(get_node("DialogWindow/HBoxContainer/Label"),"percent_visible",0,1,1)
+	tween.interpolate_property(get_node("DialogWindow/HBoxContainer/Label"),"percent_visible",0,1,2)
 	tween.start()
 
 func _process(delta):
