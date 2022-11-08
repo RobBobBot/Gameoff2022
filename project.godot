@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "StaticBody2D",
+"class": "NPC",
+"language": "GDScript",
+"path": "res://Scripts/NPC.gd"
+} ]
+_global_script_class_icons={
+"NPC": ""
+}
+
 [application]
 
 config/name="Gameoff2022"
@@ -17,6 +27,7 @@ config/icon="res://icon.png"
 [autoload]
 
 Stats="*res://Scripts/Stats.gd"
+InputProcess="*res://Scripts/InputProcess.gd"
 
 [gui]
 
