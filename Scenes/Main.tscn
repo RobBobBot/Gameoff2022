@@ -36,3 +36,7 @@ script = ExtResource( 2 )
 [node name="Screen" type="CanvasLayer" parent="."]
 
 [node name="UI" parent="Screen" instance=ExtResource( 4 )]
+
+[node name="MovementTween" type="Tween" parent="."]
+
+[connection signal="tween_all_completed" from="MovementTween" to="Player" method="_on_MovementTween_tween_all_completed"]

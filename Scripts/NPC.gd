@@ -11,7 +11,7 @@ func interactPressed():
 		screen.toCutscene()
 
 func _ready():
-	get_node("/root/InputProcess").connect("interact_pressed_outside_cutscene",self,"interactPressed")
+	InputProcess.connect("interact_pressed_outside_cutscene",self,"interactPressed")
 
 func _on_Area2D_body_entered(body):
 	if((body is KinematicBody2D)&&(body as KinematicBody2D).name=="Player"):
